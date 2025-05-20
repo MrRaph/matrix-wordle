@@ -36,5 +36,22 @@ Run main.py
 python -m poetry run python main.py
 ```
 
+## Running with Docker Compose
+
+Preparing 
+```bash
+mkdir data
+touch /data/state.json
+```
+
+Edit environment variables in file `docker-compose.yaml`, see above.
+
+Run container:
+```bash
+docker compose build
+docker compose up -d
+```
+
+
 ## Example:
 ![](./example.png)
