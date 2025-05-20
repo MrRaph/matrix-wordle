@@ -3,8 +3,10 @@ services:
     build: .
     container_name: matrix-wordle
     volumes:
-      - ./data/state.json:/usr/src/app/state.json
+      - ./data:/data
     environment:
+      LANGUAGE: "en" # or "fr"
       HOMESERVER: "https://matrix.org"
+      STATE_DIR: "/data"
       USERNAME: "wordle-bot"
       PASSWORD: "password" # or ACCESS_TOKEN=syt_...

@@ -39,6 +39,7 @@ if __name__ == '__main__':
             "An implementation of the popular Wordle game for the Matrix Protocol.\n"
             "Commands:\n"
             "help, h - Display help message\n"
+            "language, l - Set language to use\n"
             "start, s - Start a new Wordle\n"
             "answer, a - Reveal the answer")
         await bot.api.send_markdown_message(room.room_id, response)
